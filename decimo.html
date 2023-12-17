@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <title>Guia do Celetista - Décimo</title>
+</head>
+    
+<body>
+    <header> 
+        <nav>
+            <a href="index.html"> << VOLTAR</a>
+        </nav>
+
+        <h3>GUIA DO CELETISTA</h3>
+        <h4>Seus direitos trabalhistas</h4>
+    </header>
+
+    <br><br><br><br>
+    <section class="container">
+        <h2>DÉCIMO</h2>
+
+        <br>
+        <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país 
+            em 1962. O direito ao trabalhador foi implementado no governo João Goulart, 
+            por meio da lei nº 4.090/1962.</p>
+        <br>
+        <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+
+        <br>
+        <br>
+        <div class="resposta">
+            <script type="text/javascript">
+                let salario = prompt("Insira o seu salário atual");
+                salario = Number(salario);
+                let primeiraParcela = salario/2;
+                let imposto = salario / 100 * 9;
+                let segundaParcela = salario-imposto-primeiraParcela;
+
+                // Formatando os valores como dinheiro (monetário)
+                salario = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+                primeiraParcela = primeiraParcela.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                imposto = imposto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                segundaParcela = segundaParcela.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    
+                document.write("Imposto considerado de 9%."+"<br />"+"<br />");
+                document.write("Salário informado: R$"+salario+"<br />"+"<br />");
+                document.write("Primeira parcela: R$"+primeiraParcela+"<br />"+"<br />");
+                document.write("Valor de imposto: R$"+imposto+"<br />"+"<br />");
+                document.write("Segunda parcela: R$"+segundaParcela+"<br />"+"<br />");
+    
+            </script>
+        </div>
+    
+        <br><br>
+
+    </section>
+
+    <br>
+    <br> 
+    <br>
+    <br> 
+
+
+    <footer>  
+        <h3>GUIA DO CELETISTA</h3>
+        <h4>Seus direitos trabalhistas</h4>
+        <br>
+        <p class="texto-footer">Contatos: </p>
+        <p class="texto-footer">teste@email.com</p>
+        <p class="texto-footer">CNPJ: 00.000.000/0001-00</p>
+    </footer> 
+        
+</body>
+</html>
