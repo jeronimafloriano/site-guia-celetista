@@ -12,7 +12,7 @@
         <nav>
             <a href="#">Início</a>
             <a href="#">Fgts</a>
-            <a href="#">Férias</a>
+            <a href="ferias.html">Férias</a>
             <a href="#">Décimo</a>
         </nav>
 
@@ -41,8 +41,6 @@
 
     <br>
     <br> 
-    <br>
-    <br>
 
     <section class="container">
         <h2>FGTS</h2>
@@ -57,10 +55,31 @@
 
         <br>
         <h2>Cálculo</h2>
+        <br><br>
+
+        <label for="salario">Salário</label><br>
+        <input type="number" id="salario" placeholder="Insira o seu salário">
+        <br><br>
+        <label for="tempo">Meses Trabalhados</label><br>
+        <input type="number" id="tempo" placeholder="Insira o número de meses">
+        <br><br>
+        <button onclick="fgts()">CALCULAR</button>
+        <br><br>
+        <p>O valor aproximado de FGTS no período informado é de: R$<span></span></p>
+
+        <script type="text/javascript">
+            let salario = document.querySelector('#salario');
+            let tempo = document.querySelector('#tempo');
+            let resultado = document.querySelector('span');
+
+            function fgts(){
+                resultado.innerHTML = parseFloat(salario.value/100 * 8) * tempo.value;
+            }
+
+        </script>
+ 
     </section>
 
-    <br>
-    <br> 
     <br>
     <br> 
 
@@ -77,10 +96,13 @@
         
         <br>
         <h2>Cálculo</h2>
+        <br>
+        <a href="ferias.html" class="link">Clique para calcular férias</a>
+        <br><br>
+
+
     </section>
 
-    <br>
-    <br> 
     <br>
     <br> 
 
@@ -99,8 +121,6 @@
         <h2>Cálculo</h2>
     </section>
 
-    <br>
-    <br> 
     <br>
     <br> 
 
